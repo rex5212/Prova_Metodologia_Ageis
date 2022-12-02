@@ -1,4 +1,5 @@
 let scanf = require('scanf');
+//let categoria = imput('Digite sua Categoria: ')
 
 const produtos = [
     {
@@ -23,12 +24,20 @@ const produtos = [
     },
 ]
 
+const listar_por_categoria = categoria => {
+    for (let i = 0; i < produtos.length; i++) {
+      if (categoria == produtos[i].categoria) {
+        console.log(produtos[i]);
+      }
+    }
+  };
+  
+listar_por_categoria("Eletrônico");
 
-function listar() {
-    produtos.forEach(p => {
-        console.log(p)
-    })
-}
-
-
-
+/*
+  for (let i = 0; i < produtos.length; i++) {
+    if (categoria == produtos[i].categoria) {
+      console.log(produtos[i]);
+    }
+  }
+*/
