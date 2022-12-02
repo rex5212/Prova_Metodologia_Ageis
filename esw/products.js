@@ -58,3 +58,14 @@ const listar_por_valor = (valor_minimo, valor_maximo) => {
   };
   
   listar_por_valor(5, 10);
+
+  /*
+  for (let i = 0; i < produtos.length; i++) {
+    if (
+      produtos[i].valor >= valor_minimo &&
+      produtos[i].valor <= valor_maximo
+    ) {
+      console.log(produtos[i]);
+    }
+  }
+  */
